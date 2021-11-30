@@ -14,8 +14,10 @@ io.on('connection', client => {
       console.log('Mensaje!!', payload);
     //Create event message
     io.emit('message', {admin: 'New message'});
-
-
       });
+  
+      client.on('emit-message', (payload)=>{
+        io.emit('new-message', 'Holaaanda');
+      })
 
 });
