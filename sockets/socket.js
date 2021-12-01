@@ -17,7 +17,7 @@ io.on('connection', client => {
       });
   
       client.on('emit-message', (payload)=>{
-        io.emit('new-message', 'Holaaanda');
+        io.emit('new-message', payload);
       })
 
 });
