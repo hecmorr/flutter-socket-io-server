@@ -23,7 +23,7 @@
         //Simulation of the creation of event message
         socket.emit('message', {name: 'Hector'});
 
-        //Listen message event
+        //Listen new-message event
         socket.on('new-message', function(payload){
             console.log('Escuchando:', payload);
         });
