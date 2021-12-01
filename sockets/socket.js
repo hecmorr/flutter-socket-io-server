@@ -17,7 +17,11 @@ io.on('connection', client => {
       });
   
       client.on('emit-message', (payload)=>{
-        io.emit('new-message', payload);
+        console.log(payload);
+        //This will emit the message to all clientes connected to the socket
+        //io.emit('new-message', payload);
+        //This one emits everybody except for the one who emitted originally
+        client.broadcast.emit('new-message', payload);
       })
-
+     
 });
