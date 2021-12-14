@@ -11,4 +11,4 @@ class Band {
 }
 
 //Exportation of band to be used outside of this class
-module.exports = band;
+module.exports = Band;
