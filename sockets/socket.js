@@ -1,15 +1,16 @@
 const { io } = require('../index');
 const Bands = require('../models/bands');
+const Band = require('../models/band');
 
-// const bands = new Bands();
+const bands = new Bands();
   
 
-// bands.addBand(new Band('Queen'));
-// // bands.addBand(new Band('Led Zeppelin'));
-// // bands.addBand(new Band('Heroes del Silencio'));
-// // bands.addBand(new Band('Zoe'));
+bands.addBand(new Band('Queen'));
+bands.addBand(new Band('Led Zeppelin'));
+bands.addBand(new Band('Heroes del Silencio'));
+bands.addBand(new Band('Zoe'));
 
-// console.log(bands);
+console.log(bands);
 
 // console.log('init server');
 //Socket Messages
