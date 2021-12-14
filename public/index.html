@@ -24,8 +24,8 @@
         socket.emit('message', {name: 'Hector'});
 
         //Listen new-message event
-        socket.on('new-message', function(payload){
-            console.log('Escuchando:', payload);
+        socket.on('active-bands', function(payload){
+            console.log('Currently active bands:', payload);
         });
 
 
