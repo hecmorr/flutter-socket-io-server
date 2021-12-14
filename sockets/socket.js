@@ -1,4 +1,4 @@
-
+const { io } = require('../index');
 const Bands = require('../models/bands');
 
 const bands = new Bands();
