@@ -1,5 +1,14 @@
 const { io } = require('../index');
+const Bands = require('../models/bands');
 
+const bands = new Bands();
+
+bands.addBand(new Bands('Queen'));
+bands.addBand(new Bands('Led Zeppelin'));
+bands.addBand(new Bands('Heroes del Silencio'));
+bands.addBand(new Bands('Zoe'));
+
+// console.log('init server');
 //Socket Messages
 //Client represents a device connected to my socket service
 io.on('connection', client => {
