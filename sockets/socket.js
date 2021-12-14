@@ -39,7 +39,8 @@ io.on('connection', client => {
       })
 
   client.on('vote-band', (payload)=>{
-    console.log(payload);
+    bands.voteBand(payload.id);
+    io.emit('active-bands', bands.getBands());
   })
      
 });
