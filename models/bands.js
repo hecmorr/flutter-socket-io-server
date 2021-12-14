@@ -1,4 +1,4 @@
-
+const Band = require("./band");
 
 //Class that will handle the different methods available to interact with the bands 
 class Bands{
@@ -17,7 +17,7 @@ class Bands{
     }
 
     deleteBand(id=' '){
-        this.bands = this.bands.filter(band => band.id != id); //Return all of the bands that dont have the id that the method is receiving
+        this.bands = this.bands.filter(band => band.id != id); //Returns all of the bands that dont have the id that the method is receiving
         return this.bands;                                     //returns the new array of bands
     }
 
