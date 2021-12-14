@@ -17,6 +17,7 @@ console.log(bands);
 //Client represents a device connected to my socket service
 io.on('connection', client => {
     console.log('Client connected');
+    client.emit('Active Bands', bands.getBands());
     //Callback that triggers once the client disconnects
   client.on('disconnect', () => { 
       console.log('Client disconnected');
