@@ -42,5 +42,12 @@ io.on('connection', client => {
     bands.voteBand(payload.id);
     io.emit('active-bands', bands.getBands());
   })
+
+  client.on('add-band', (payload)=>{
+    bands.addBand(new Band(payload));
+    io.emit('active-bands', bands.getBands());
+  })
+
+
      
 });
