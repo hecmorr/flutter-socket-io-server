@@ -37,5 +37,9 @@ io.on('connection', client => {
         //This one emits everybody except for the one who emitted originally
         client.broadcast.emit('new-message', payload);
       })
+
+  client.on('vote-band', (payload)=>{
+    console.log(payload);
+  })
      
 });
