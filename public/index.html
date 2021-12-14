@@ -29,7 +29,8 @@
         });
 
         socket.on('active-bands', function(bands){
-            console.table('Currently active bands:', bands);
+            console.clear();
+            console.table(bands);
         });
 
 
