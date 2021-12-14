@@ -8,6 +8,8 @@ bands.addBand(new Band('Led Zeppelin'));
 bands.addBand(new Band('Heroes del Silencio'));
 bands.addBand(new Band('Zoe'));
 
+console.log(bands);
+
 // console.log('init server');
 //Socket Messages
 //Client represents a device connected to my socket service
