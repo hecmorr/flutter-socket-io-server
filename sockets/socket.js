@@ -2,6 +2,7 @@ const { io } = require('../index');
 const Bands = require('../models/bands');
 
 const bands = new Bands();
+console.log('init server');
 
 // bands.addBand(new Band('Queen'));
 // bands.addBand(new Band('Led Zeppelin'));
